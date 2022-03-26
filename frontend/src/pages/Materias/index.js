@@ -1,37 +1,47 @@
 import "./style.scss";
-
 import SouAluno from "../../Components/SouAluno";
+import prof from "../../assets/prof.jpg";
+
 const Materias = () => [
-  <section className="section">
-    <div>
-      <div className="materias">
-        <div>
-          <div>
-            <div>
-              <h3>Matemática</h3>
+  <section>
+    <SouAluno />
+    <div className="div-section">
+      <div className="div-subjects">
+        <div className="matter">
+          <h3>Matemática</h3>
+          <div className="div-prof">
+            <img src={prof} alt="" className="img-profile" />
+            <div className="text">
+              <h2>Francisca</h2>
+              <a>francisca@gmail.com</a>
+              <p>(85) 99999-9999</p>
             </div>
           </div>
+          <button className="button-details">Detalhes</button>
         </div>
-        <div>
-          <div>
-            <div>
-              <h3>Matemática</h3>
+        <div className="matter">
+          <h3>Matemática</h3>
+          <div className="div-prof">
+            <img src={prof} alt="" className="img-profile" />
+            <div className="text">
+              <h2>Francisca</h2>
+              <a>francisca@gmail.com</a>
+              <p>(85) 99999-9999</p>
             </div>
           </div>
+          <button className="button-details">Detalhes</button>
         </div>
-        <div>
-          <div>
-            <div>
-              <h3>Matemática</h3>
+        <div className="matter">
+          <h3>Matemática</h3>
+          <div className="div-prof">
+            <img src={prof} alt="" className="img-profile" />
+            <div className="text">
+              <h2>Francisca</h2>
+              <a>francisca@gmail.com</a>
+              <p>(85) 99999-9999</p>
             </div>
           </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <h3>Matemática</h3>
-            </div>
-          </div>
+          <button className="button-details">Detalhes</button>
         </div>
       </div>
     </div>

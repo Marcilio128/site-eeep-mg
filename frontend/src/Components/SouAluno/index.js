@@ -1,13 +1,20 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
-import { BsFillBookmarkFill } from "react-icons/bs";
-import { AiTwotoneCalendar, AiOutlineUser } from "react-icons/ai";
-import { GiPoliceBadge } from "react-icons/gi";
 
 import "./style.scss";
 import logo from "../../assets/logo.jpg";
 
 const SouAluno = () => {
+  const history = useHistory();
+
+  const Matter = () => {
+    history.push("/Materias");
+  };
+  const Calendario = () => {
+    history.push("/Calendario");
+  };
+
   return (
     <section>
       <div className="header-home">
@@ -15,26 +22,26 @@ const SouAluno = () => {
           <img src={logo} />
         </div>
         <div>
-          <button className="button-pages">
-            <BsFillBookmarkFill />
+          <button onClick={Matter} className="button-pages">
             Matérias
-          </button>
-          <button className="button-pages">
-            <AiTwotoneCalendar />
-            Calendário
-          </button>
-          <button className="button-pages">
             <IoIosArrowDown />
-            Notas
+          </button>
+          <button onClick={Calendario} className="button-pages">
+            Calendário
+            <IoIosArrowDown />
+          </button>
+          <button className="button-pages">
+            Boletim
+            <IoIosArrowDown />
           </button>
 
           <button className="button-pages">
-            <GiPoliceBadge />
             Grêmio
+            <IoIosArrowDown />
           </button>
           <button className="button-pages">
-            <AiOutlineUser />
             Perfil
+            <IoIosArrowDown />
           </button>
         </div>
       </div>

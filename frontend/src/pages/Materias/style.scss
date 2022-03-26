@@ -1,12 +1,72 @@
-.section{
-display: flex;
-justify-content: center;
+.div-section{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    .materias{
-        width: 40%;
+    
+    .div-subjects{
+        width: 90%;
+
         display: flex;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: space-between;   
         
+        .matter{
+            width: 30%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0rem 0rem 0.5rem 0rem;
+
+            border-radius: 5px;
+            border: 1px solid gray;
+            
+            h3{
+                text-align: center;
+
+                color: white;
+                background-color: green;
+            }
+            .div-prof{
+             width: 80%;
+            
+             padding: 1rem;
+             margin: 0 auto;
+             display: flex;
+             align-items: center;   
+        
+             .img-profile{
+                    width: 20%;
+                    
+                    border-radius: 200px;
+                }
+                .text{
+                    h2{
+                        font-size: 15px;
+                    }
+                    p{
+                        color: gray;
+                    }
+                }
+            
+            }
+
+            .button-details{
+                width: 80%;
+                margin: 0 auto;
+
+                border: none;
+                padding: 10px;
+                border-radius: 200px;
+
+                font-weight: 500;
+                font-size: 15px;
+
+                color: white;
+                background-color: green;
+            }
+        }
     }
 }
