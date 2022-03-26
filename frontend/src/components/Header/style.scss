@@ -1,7 +1,9 @@
 header{
     width: 100%;
-
     padding: 0.8rem 5%;
+
+    top: 0;
+    position: fixed;
     justify-content: space-between;
 
     background-color: var(--color-white);
@@ -13,6 +15,7 @@ header{
         }
 
         label{
+            font-weight: 500;
             margin-left: 1rem;
             letter-spacing: 0.5px;
         
@@ -21,7 +24,6 @@ header{
     }
 
     ul{
-
         li{
             font-weight: 500;
             font-size: 0.78rem;

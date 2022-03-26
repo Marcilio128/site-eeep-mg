@@ -1,0 +1,58 @@
+.section-home{
+    main{
+        width: 100%;
+        height: 23rem;
+        overflow-x: hidden !important;
+
+        text-align: center;
+        padding-top: 10rem;
+        background-color: var(--color-primary);
+
+        h1{
+            font-size: 2.3rem;
+            text-align: center;
+
+            margin-top: 4rem;
+
+            color: var(--color-white);
+        }
+        
+        div{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content:    center;
+
+            margin-top: 1rem;
+
+            color: var(--color-white);
+
+            span{
+                margin-right: 0.5rem;
+            }
+            
+            
+            label{
+                margin-right: 1rem;
+                letter-spacing: 1px;
+            }
+
+        }
+        
+        h1:after{
+         content: '|';
+         margin-left: 5px;
+         opacity: 1;
+         animation: pisca .30s infinite;
+        }
+        
+        @keyframes pisca{
+            0%, 100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+        }
+    }
+}
