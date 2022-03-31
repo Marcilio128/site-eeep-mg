@@ -11,12 +11,16 @@ const SouAluno = () => {
   const Matter = () => {
     history.push("/Materias");
   };
-  const Calendario = () => {
-    history.push("/Calendario");
+  const Boletim = () => {
+    history.push("/Boletim");
+  };
+
+  const Perfil = () => {
+    history.push("/Perfil");
   };
 
   return (
-    <section>
+    <section className="section-soualuno">
       <div className="header-home">
         <div>
           <img src={logo} />
@@ -26,11 +30,11 @@ const SouAluno = () => {
             Matérias
             <IoIosArrowDown />
           </button>
-          <button onClick={Calendario} className="button-pages">
+          <button className="button-pages">
             Calendário
             <IoIosArrowDown />
           </button>
-          <button className="button-pages">
+          <button onClick={Boletim} className="button-pages">
             Boletim
             <IoIosArrowDown />
           </button>
@@ -39,7 +43,7 @@ const SouAluno = () => {
             Grêmio
             <IoIosArrowDown />
           </button>
-          <button className="button-pages">
+          <button onClick={Perfil} className="button-pages">
             Perfil
             <IoIosArrowDown />
           </button>
